@@ -1,0 +1,24 @@
+bool hasClicked = false;
+vector2 currentShot = (0, 0);
+
+while(true) {
+
+    if(hasClicked) {
+        currentShot = input.laserPoint;
+
+        saveShotToDisk();
+
+        hasClicked = false;
+    }
+
+}
+
+onClickSoundDetected() {
+    hasClicked = true;
+}
+
+saveToDisk() {
+    // blabla;
+}
+
+
